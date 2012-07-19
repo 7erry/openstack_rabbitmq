@@ -51,12 +51,12 @@ if ((!options_found)); then
       echo "      -i (AMI to instantiate)"
       echo "      -n (Number of instances)"
       echo " "
-      echo "example: openstack_riak -i ami-00000021 -g nimbus -k apifoundry-dev-ewr1 -t m1.small"
+      echo "example: $0 -i ami-00000021 -g nimbus -k apifoundry-dev-ewr1 -t m1.small"
 			exit 1
 fi
 
-euca-run-instances $aminame -g $secgroup -k $seckey -f ./riak_master.sh -t $amitype -n 1 >stdout.txt
-cat stdout.txt
+euca-run-instances $aminame -g $secgroup -k $seckey -f ./riak_master.sh -t $amitype -n 1 >master_instance.txt
+cat master_instance.txt
 
 
 
