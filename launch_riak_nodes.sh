@@ -57,7 +57,7 @@ if ((!options_found)); then
 fi
 
 euca-run-instances $aminame -g $secgroup -k $seckey -f ./riak_master.sh -t $amitype -n $instances >node_instances.txt
-cat stdout.txt
+cat node_instances.txt
 
 
 
