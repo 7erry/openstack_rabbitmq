@@ -52,7 +52,7 @@ if ((!options_found)); then
       echo "      -i (AMI to instantiate)"
       echo "      -n (Number of instances)"
       echo " "
-      echo "example: $0 -i ami-00000021 -g nimbus -k apifoundry-dev-ewr1 -t m1.small"
+      echo "example: $0 -i ami-00000021 -g nimbus -k apifoundry-dev-ewr1 -t m1.small -n 99"
 			exit 1
 fi
 
