@@ -30,7 +30,7 @@
 		ssh to ip from above and get the hostname
 		ie. server2525
 	3) Update the node with the master ip for clustering:
-		perl -p -i -e s/CHANGEMETOMASTERNODENAME/server-2525/g rabbit_node.sh 
+		perl -p -i -e s/CHANGEMETOMASTERNODENAME/server-2525/g rabbitmq_node.sh 
 	4) Create a cluster of nodes that join the master:
 		launch_rabbitmq_nodes.sh -i ami-00000021 -g nimbus -k apifoundry-dev-ewr1 -t m1.small -n 99
 
