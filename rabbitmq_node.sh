@@ -48,9 +48,8 @@ echo '[rabbitmq_shovel,rabbitmq_management,rabbitmq_stomp,rabbitmq_web_stomp,rab
 #/var/logs/rabbitmq/
 
 # either way we have to restart rabbit
-#/etc/init.d/rabbitmq-server start
-/usr/sbin/rabbitmq-server -detached
-
+/etc/init.d/rabbitmq-server start
+#/usr/sbin/rabbitmq-server -detached
 # insert some clustering logic here...
 sleep 2
 /usr/sbin/rabbitmqctl stop_app

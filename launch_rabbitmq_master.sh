@@ -55,7 +55,7 @@ if ((!options_found)); then
 			exit 1
 fi
 
-euca-run-instances $aminame -g $secgroup -k $seckey -f ./riak_master.sh -t $amitype -n 1 >master_instance.txt
+euca-run-instances $aminame -g $secgroup -k $seckey -f ./rabbitmq_master.sh -t $amitype -n 1 >master_instance.txt
 cat master_instance.txt
 
 
