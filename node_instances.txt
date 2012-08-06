@@ -1,2 +1,0 @@
-RESERVATION	r-otay4u09	24	nimbus
-INSTANCE	i-00000cc5	ami-00000021			pending	apifoundry-dev-ewr1	0		m1.small	2012-07-26T19:35:23Z	unknown zone	aki-0000001f	ari-00000020		monitoring-disabled					instance-store									
